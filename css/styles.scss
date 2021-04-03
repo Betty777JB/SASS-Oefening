@@ -98,6 +98,8 @@ $TitleColor: #000;/* dat zijn de var voor de kleuren en padding*/
 $heroBg:#97d279;
 
 /* Header */
+
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -146,6 +148,11 @@ $heroBg:#97d279;
 }
 
 /* Hero Section */
+ @mixin hero-text {
+    max-width: 700px;
+    text-align: center;
+    padding:$Std-Padding;
+}
 .hero {
     padding: $Std-Padding;
     display: flex;
@@ -160,14 +167,17 @@ $heroBg:#97d279;
     }
 
     &__text {
-        max-width: 700px;
-        text-align: center;
-        padding:$Std-Padding;
+        @include hero-text;
     }
 }
 
 
 /* Featured Section */
+@mixin featured-text {
+   max-width: 700px;
+   text-align: center;
+   padding:$Std-Padding;
+}
 .featured {
     padding: $Std-Padding;
 
@@ -180,10 +190,8 @@ $heroBg:#97d279;
         width: 300px;
     }
 
-    &__wrapper__text {
-        max-width: 700px;
-        text-align: center;
-        padding: $Std-Padding;
+    &__text {
+        @include featured-text;
 
         p {
             text-align: justify;
@@ -196,6 +204,11 @@ $heroBg:#97d279;
 
 
 /* About Section */
+@mixin about-text {
+   max-width: 700px;
+   text-align: center;
+   padding:$Std-Padding;
+}
 .about {
     background-color: $heroBg;
     padding: $Std-Padding;
@@ -204,10 +217,8 @@ $heroBg:#97d279;
         display: flex;
     }
 
-    &__wrapper__text {
-        max-width: 700px;
-        text-align: center;
-        padding: $Std-Padding;
+    &__text {
+            @include about-text;
     }
 
     &__wrapper__text p {
