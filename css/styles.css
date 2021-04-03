@@ -91,6 +91,7 @@ input {
 }
 
 /* Pas alleen de onderstaande regels aan */
+/* dat zijn de var voor de kleuren en padding*/
 /* Header */
 .header {
     display: flex;

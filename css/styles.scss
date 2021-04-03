@@ -92,6 +92,11 @@ input {
 }
 
 /* Pas alleen de onderstaande regels aan */
+$Std-Padding: 20px;
+$HeaderColor: #c0eea9;
+$TitleColor: #000;/* dat zijn de var voor de kleuren en padding*/
+$heroBg:#97d279;
+
 /* Header */
 .header {
     display: flex;
@@ -99,8 +104,8 @@ input {
     position: fixed;
     width: 100%;
     z-index: 1;
-    padding: 20px;
-    background-color: #c0eea9;
+    padding: $Std-Padding;
+    background-color: $HeaderColor;
     height: 120px;
     -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
@@ -109,7 +114,7 @@ input {
 
     &__brand-logo img {
         width: auto;
-        padding-top: 20px;
+        padding-top: $Std-Padding;
         height: 7.5em;
     }
 }
@@ -124,7 +129,7 @@ input {
     &__line {
         width: 3em;
         height: 1px;
-        background-color: #000;
+        background-color: $TitleColor;
         margin-right: 1em;
     }
 }
@@ -142,11 +147,11 @@ input {
 
 /* Hero Section */
 .hero {
-    padding: 20px;
+    padding: $Std-Padding;
     display: flex;
     height: 100vh;
     align-items: center;
-    background: #97d279;
+    background: $heroBg;
 
     &__img img {
         display: block;
@@ -157,14 +162,14 @@ input {
     &__text {
         max-width: 700px;
         text-align: center;
-        padding: 20px;
+        padding:$Std-Padding;
     }
 }
 
 
 /* Featured Section */
 .featured {
-    padding: 20px;
+    padding: $Std-Padding;
 
     .wrapper {
         display: flex;
@@ -178,11 +183,11 @@ input {
     &__wrapper__text {
         max-width: 700px;
         text-align: center;
-        padding: 20px;
+        padding: $Std-Padding;
 
         p {
             text-align: justify;
-            padding: 20px;
+            padding: $Std-Padding;
             line-height: 1.4em;
         }
     }
@@ -192,8 +197,8 @@ input {
 
 /* About Section */
 .about {
-    background-color: #97d279;
-    padding: 20px;
+    background-color: $heroBg;
+    padding: $Std-Padding;
 
     .wrapper {
         display: flex;
@@ -202,7 +207,7 @@ input {
     &__wrapper__text {
         max-width: 700px;
         text-align: center;
-        padding: 20px;
+        padding: $Std-Padding;
     }
 
     &__wrapper__text p {
@@ -233,13 +238,13 @@ input {
 
 /* Contact Section */
 .contact {
-    padding: 20px;
+    padding: $Std-Padding;
 
     &__wrapper-form {
-        padding: 20px;
+        padding: $Std-Padding;
     }
     &__wrapper-copy {
-        padding-left: 20px;
+        padding-left: $Std-Padding;
     }
 }
 
