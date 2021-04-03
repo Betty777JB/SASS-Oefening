@@ -148,11 +148,9 @@ $heroBg:#97d279;
 }
 
 /* Hero Section */
- @mixin hero-text {
-    max-width: 700px;
-    text-align: center;
-    padding:$Std-Padding;
-}
+@import'constants';
+
+
 .hero {
     padding: $Std-Padding;
     display: flex;
@@ -173,11 +171,8 @@ $heroBg:#97d279;
 
 
 /* Featured Section */
-@mixin featured-text {
-   max-width: 700px;
-   text-align: center;
-   padding:$Std-Padding;
-}
+@import "constants";
+
 .featured {
     padding: $Std-Padding;
 
@@ -204,11 +199,8 @@ $heroBg:#97d279;
 
 
 /* About Section */
-@mixin about-text {
-   max-width: 700px;
-   text-align: center;
-   padding:$Std-Padding;
-}
+@import'constants';
+
 .about {
     background-color: $heroBg;
     padding: $Std-Padding;

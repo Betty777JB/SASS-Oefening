@@ -1,0 +1,14 @@
+@mixin hero-text {
+   max-width: 700px;
+   text-align: center;
+   padding:$Std-Padding;
+}
+@mixin about-text {
+   max-width: 700px;
+   text-align: center;
+   padding:$Std-Padding;
+}
+@mixin featured-text {
+   max-width: 700px;
+   text-align: center;
+   padding:$Std-Padding;}
