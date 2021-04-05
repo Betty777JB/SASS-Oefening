@@ -1,15 +1,22 @@
-@mixin hero-text {
+//variables
+
+$Std-Padding: 20px;
+$HeaderColor: #c0eea9;
+$TitleColor: #000;/* dat zijn de var voor de kleuren en padding*/
+$heroBg:#97d279;
+
+
+@mixin algemeen-text {
    max-width: 700px;
    text-align: center;
    padding:$Std-Padding;
 }
-@mixin about-text {
-   max-width: 700px;
-   text-align: center;
-   padding:$Std-Padding;
-}
-@mixin featured-text {
-   max-width: 700px;
-   text-align: center;
-   padding:$Std-Padding;
-}
+
+
+
+//   oplossing (alles in een keer opgeven dus)
+//   @mixin algemeen-text {
+//   max-width: 700px;
+//   text-align: center;
+//   padding-top: 1em;
+//

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+@import "constants.scss";
 
 /* Global */
 * {
@@ -92,10 +93,7 @@ input {
 }
 
 /* Pas alleen de onderstaande regels aan */
-$Std-Padding: 20px;
-$HeaderColor: #c0eea9;
-$TitleColor: #000;/* dat zijn de var voor de kleuren en padding*/
-$heroBg:#97d279;
+
 
 /* Header */
 
@@ -148,7 +146,7 @@ $heroBg:#97d279;
 }
 
 /* Hero Section */
-@import'constants';
+
 
 
 .hero {
@@ -165,13 +163,13 @@ $heroBg:#97d279;
     }
 
     &__text {
-        @include hero-text;
+        @include algemeen-text();
     }
 }
 
 
 /* Featured Section */
-@import "constants";
+
 
 .featured {
     padding: $Std-Padding;
@@ -186,9 +184,9 @@ $heroBg:#97d279;
     }
 
     &__text {
-        @include featured-text;
+        @include algemeen-text();
 
-        p {
+    &__p {
             text-align: justify;
             padding: $Std-Padding;
             line-height: 1.4em;
@@ -199,7 +197,7 @@ $heroBg:#97d279;
 
 
 /* About Section */
-@import'constants';
+
 
 .about {
     background-color: $heroBg;
@@ -210,7 +208,7 @@ $heroBg:#97d279;
     }
 
     &__text {
-            @include about-text;
+            @include algemeen-text;
     }
 
     &__wrapper__text p {
